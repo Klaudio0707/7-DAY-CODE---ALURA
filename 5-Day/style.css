@@ -1,9 +1,10 @@
-.sectOcultar{
+.ocultar{
 display: none;
+
 
 }
 
-.btnExibir{
+.exibir{
 display: block;
 
 }

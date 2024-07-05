@@ -1,45 +1,43 @@
 const frm = document.querySelector("form");
-const btnProduto = document.querySelector("inProduto"); 
+const btnRemov = document.querySelector("#btnRemov"); 
+
+//select das tags de saída no html
+
+const outFruta = document.querySelector("#outFrutas");
+const outCongelados = document.querySelector("#outCongelados");
+const outDoces = document.querySelector("#outDoces");
+const outLaticinios = document.querySelector("#outLaticinios");
 
 
-
-
+// vetores que vao ser usados para armazena os produtos
 const laticinio = [];
 const congelados = [];
 const doces = [];
 const frutas = [];
 
-let resp = "";
 
+// variaveis que são usadas para armazenar informações durante a execução do codigo
 
-function conf() {
-    const confirmar = confirm("Você deseja adicionar uma comida\n na seu carrinho de compras ? ");
+let categoria = "";
+let produto = "";
 
-if (confirmar == true) {
-    alert("Informe um produto na caixa de texto abaixo!\nDepois informe a qual seção o produto pertence")
-
-
-btnProduto.focus();
-    
-}else{
-alert("Até mais!!");
-window.close();
-
-
-}
-    
-}
 
 frm.addEventListener("submit", (e) => {
 e.preventDefault();
 
+const inProduto = (frm.inProduto.value);
 
+ categoria = prompt("Escolha uma categoria para seu produto\n Laticinio -  Doces - Congelados - Frutas");
 
+switch (categoria) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
 
 
 
 });
-
-conf();
-
-
